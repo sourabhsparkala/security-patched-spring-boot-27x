@@ -168,7 +168,7 @@
     <!-- Resolved CVE-2022-33980 : https://nvd.nist.gov/vuln/detail/CVE-2022-33980 -->
     <version.commons-configuration2>2.8.0</version.commons-configuration2>
     <!-- Resolved CVE-2022-31159: https://nvd.nist.gov/vuln/detail/CVE-2022-31159 -->
-    <version.aws-java-sdk-cloudwatch>1.12.335</version.aws-java-sdk-cloudwatch>
+    <version.aws-java-sdk-cloudwatch>1.12.410</version.aws-java-sdk-cloudwatch>
     <log4j2.version>2.18.0</log4j2.version>
     <!-- Resolved CVE-2022-31197: https://nvd.nist.gov/vuln/detail/CVE-2022-31197 -->
     <!-- Resolved CVE-2022-41946: https://nvd.nist.gov/vuln/detail/CVE-2022-41946 -->
