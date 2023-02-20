@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.sap.sgs.phosphor</groupId>
+  <artifactId>security-patched-bom-spring-boot-27x</artifactId>
+  <version>2.7.7-sap-02</version>
+  <packaging>pom</packaging>
+  <name>Security patched Spring Boot Starter 2.7.x</name>
+  <description>Security BOM project for Spring Boot v2.7.x based on dependencies only</description>
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+    <maven.deploy.skip>true</maven.deploy.skip>
+    <maven.javadoc.skip>true</maven.javadoc.skip>
+  </properties>
+  <build>
+    <defaultGoal>package</defaultGoal>
+  </build>
+  <profiles>
+    <profile>
+      <id>base</id>
+      <activation>
+        <activeByDefault>true</activeByDefault>
+      </activation>
+      <modules>
+        <module>security-patched-dependencies-bom</module>
+        <module>security-patched-starter-bom</module>
+      </modules>
+    </profile>
+    <profile>
+      <id>release</id>
+      <modules>
+        <module>security-patched-dependencies-bom</module>
+        <module>security-patched-starter-bom</module>
+      </modules>
+    </profile>
+    <profile>
+      <id>scan</id>
+      <modules>
+        <module>security-scan</module>
+      </modules>
+    </profile>
+  </profiles>
+</project>

@@ -1,0 +1,19 @@
+{
+	"extraTestApps": [
+		{
+			"url": "https://github.wdf.sap.corp/ISUtilitiesIoT/c4e-eds-parent.git",
+			"branch": "master",
+			"pathToPom": "pom.xml"
+		},
+		{
+			"url": "https://github.wdf.sap.corp/LaMa/base-lib.git",
+			"branch": "master",
+			"pathToPom": "parent-pom/pom.xml"
+		},
+		{
+			"url": "https://github.wdf.sap.corp/k5/machine-learning-engine.git",
+			"branch": "master",
+			"pathToPom": "mle-java-spring/pom.xml"
+		}
+	]
+}

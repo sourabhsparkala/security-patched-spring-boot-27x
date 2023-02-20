@@ -1,0 +1,82 @@
+= Phosphor: Security Patched Spring Boot Starter 2.7.x
+
+For more details see in link:https://wiki.wdf.sap.corp/wiki/pages/viewpage.action?pageId=2017975122[Wiki page of Project Phosphor] and link:https://jam4.sapjam.com/groups/XgeUs0CXItfeWyuI4k7lM3/overview_page/ZuKypWNjcfRouhcm9eM7sl[Phosphor Jam Overview]. +
+For technical details see link:https://wiki.wdf.sap.corp/wiki/pages/viewpage.action?pageId=2029195095[Pure Spring Boot Application (Programming Model)] in general or in direct relation to this use case link:https://wiki.wdf.sap.corp/wiki/display/osssec/SecPatched+Dependencies+as+Application+Import+and+SAP+specific+as+Application+Parent[Security Patched Spring Boot].
+
+For a quick _How To Start Guide_ see the link:https://wiki.wdf.sap.corp/wiki/display/osssec/How+To+Use+-+secBOM+Spring+Boot[Documentation for Security Patched Spring Boot BOM]
+
+For any question or feedback regarding this project please write us a mail to link:mailto:DL_5BFD4979BADEF808C2F1B2DD@sap.com[DL Phosphor Feedback] or post a message in our Slack channel link:https://sap-tools.slack.com/archives/CGGAHFUC9[#sap-tools-phosphor].
+
+== Latest released Security Patched Spring Boot Starter 2.7.x
+*Latest version:* `2.7.7-sap-02`
+*Based on (inherit from) `org.springframework.boot:spring-boot-starter-parent:2.7.7`*.
+
+```
+<parent>
+  <groupId>com.sap.sgs</groupId>
+  <artifactId>security-patched-spring-boot-starter</artifactId>
+  <version>2.7.7-sap-02</version>
+</parent>
+```
+
+== Latest released Security Patched Spring Boot Dependencies 2.7.x
+*Latest version:* `2.7.7-sap-02`
+*Based on (inherit from) `org.springframework.boot:spring-boot-dependencies:2.7.7`*.
+
+```
+<dependencyManagement>
+    <dependencies>
+      <dependency>
+        <groupId>com.sap.sgs</groupId>
+        <artifactId>security-patched-spring-boot-dependencies</artifactId>
+        <version>2.7.7-sap-02</version>
+        <type>pom</type>
+        <scope>import</scope>
+      </dependency>
+    </dependencies>
+</dependencyManagement>
+```
+
+== Changelog
+
+See in link:CHANGELOG.md[Changelog] for the list of changes in current and previous releases.
+
+== Phosphor handled dependencies (Not provided by official Spring Boot BOM)
+
+* `org.springframework.cloud:spring-cloud-starter-open-service-broker-webmvc:2.1.3.RELEASE`
+* `org.springdoc:springdoc-openapi-ui:1.6.x`
+* `org.springdoc:springdoc-openapi-data-rest:1.6.x`
+* `io.pivotal.cfenv:java-cfenv-boot:2.4.x`
+* `com.sap.cloud.security:java-bom:2.13.x`
+* `com.sap.cp.auditlog:audit-java-client-impl:2.4.x`
+* `com.sap.cp.auditlog:audit-java-client-api:2.4.x`
+* `com.sap.hcp.cf.logging:cf-java-logging-support-logback:3.6.x`
+* `com.sap.xs.java:xs-env:1.8.5`
+* `org.springframework.security:spring-security-jwt:1.1.1.RELEASE`
+
+== Special cases
+  * The previously recorded special cases will be maintained in link:https://github.wdf.sap.corp/Phosphor/security-patched-boms-special-cases/blob/main/old-analysis/27x-README.adoc[old-analysis/27x-README.adoc].
+  * From here on out, the new special cases can be found in link:https://github.wdf.sap.corp/Phosphor/security-patched-boms-special-cases#readme[Security Patched BOMs special cases].
+
+== Further links
+
+=== Nexus artifacts
+
+  * link:++https://nexussnap.wdf.sap.corp:8443/nexus/#nexus-search;gav~com.sap.sgs~security-patched-spring-boot-starter~~~++[Snapshot Nexus]
+  * link:++https://nexusmil.wdf.sap.corp:8443/nexus/#nexus-search;gav~com.sap.sgs~security-patched-spring-boot-starter~~~++[Milestone Nexus]
+
+=== Project internal links
+
+  * link:https://gkephosphorinfra.jaas-gcp.cloud.sap.corp/job/Phosphor%20Org/job/security-patched-spring-boot-25x/[Jenkins: security-patched-spring-boot-starter-25x]
+  * link:https://github.wdf.sap.corp/PhosphorSac/phosphor-dev/blob/master/docs/sbom_release_process.md[Release process for security patched BOMs]
+
+== Further external documentation
+
+=== Spring Documentation
+
+  * link:https://docs.spring.io/spring-boot/docs/current/reference/html/using-boot-build-systems.html[Spring Boot Build System]
+  * link:https://docs.spring.io/spring-boot/docs/current/reference/html/using-boot-build-systems.html#using-boot-maven-without-a-parent[Spring Boot Starter w/o parent]
+
+=== Maven Documentation
+
+  * link:https://maven.apache.org/guides/introduction/introduction-to-dependency-mechanism.html[Maven Dependency Mechanism]

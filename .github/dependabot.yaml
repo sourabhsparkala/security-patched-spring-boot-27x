@@ -1,0 +1,17 @@
+version: 2
+updates:
+
+  # Maintain dependencies for GitHub Actions
+  - package-ecosystem: "github-actions"
+    directory: "/security-scan"
+    schedule:
+      interval: "daily"
+    labels:
+      - "dependency"
+
+  - package-ecosystem: "maven"
+    directory: "/security-scan"
+    schedule:
+      interval: "daily"
+    labels:
+      - "dependency"
