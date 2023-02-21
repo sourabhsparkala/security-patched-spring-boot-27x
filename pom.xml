@@ -25,6 +25,7 @@
       <modules>
         <module>security-patched-dependencies-bom</module>
         <module>security-patched-starter-bom</module>
+        <module>security-scan</module>
       </modules>
     </profile>
     <profile>
