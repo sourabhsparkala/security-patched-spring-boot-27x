@@ -6148,11 +6148,6 @@
       </dependency>
       <dependency>
         <groupId>io.rest-assured.examples</groupId>
-        <artifactId>scalatra-example</artifactId>
-        <version>4.5.1</version>
-      </dependency>
-      <dependency>
-        <groupId>io.rest-assured.examples</groupId>
         <artifactId>scalatra-webapp</artifactId>
         <version>4.5.1</version>
         <type>war</type>
