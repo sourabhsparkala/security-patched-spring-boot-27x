@@ -155,7 +155,7 @@
     <!-- Resolved CVE-2021-40690: https://nvd.nist.gov/vuln/detail/CVE-2021-40690 -->
     <!-- Resolved CVE-2022-46363 (BDSA-2022-3589): https://nvd.nist.gov/vuln/detail/CVE-2022-46363 -->
     <!-- Resolved CVE-2022-46364 (BDSA-2022-3590): https://nvd.nist.gov/vuln/detail/CVE-2022-46364 -->
-    <version.cxf>3.5.5</version.cxf>
+    <version.cxf>4.0.0</version.cxf>
     <!-- Resolved CVE-2021-36090: https://nvd.nist.gov/vuln/detail/CVE-2021-36090 -->
     <!-- Resolved CVE-2021-35515: https://nvd.nist.gov/vuln/detail/CVE-2021-35515 -->
     <!-- Resolved CVE-2021-35516: https://nvd.nist.gov/vuln/detail/CVE-2021-35516 -->  
