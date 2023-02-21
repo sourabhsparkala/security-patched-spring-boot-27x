@@ -18,8 +18,9 @@ jobs:
           java-version: '8'
           distribution: 'temurin'
           cache: maven
-     # - name: Build with Maven
-     #   run: mvn -f security-scan/pom.xml help:effective-pom -Doutput=output/pom.xml
+      - name: Build with Maven
+        run: mvn -f security-scan/pom.xml clean package
+        #run: mvn -f security-scan/pom.xml help:effective-pom -Doutput=output/pom.xml
      # - name: Build with Maven
      #   run: mvn -f security-scan/output/pom.xml dependency:tree
         
