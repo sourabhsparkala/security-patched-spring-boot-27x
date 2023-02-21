@@ -3685,11 +3685,6 @@
       </dependency>
       <dependency>
         <groupId>org.infinispan</groupId>
-        <artifactId>infinispan-tools</artifactId>
-        <version>13.0.14.Final</version>
-      </dependency>
-      <dependency>
-        <groupId>org.infinispan</groupId>
         <artifactId>infinispan-anchored-keys</artifactId>
         <version>13.0.14.Final</version>
       </dependency>
