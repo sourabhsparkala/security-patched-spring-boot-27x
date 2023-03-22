@@ -193,7 +193,7 @@
     <version.xnio>3.8.8.Final</version.xnio>
     <!-- Resolved CVE-2022-40149: https://nvd.nist.gov/vuln/detail/CVE-2022-40149 -->
     <!-- Resolved CVE-2022-40150: https://nvd.nist.gov/vuln/detail/CVE-2022-40150 -->
-    <version.jettison>1.5.2</version.jettison>
+    <version.jettison>1.5.4</version.jettison>
     <!-- Resolved  CVE-2022-40151: https://nvd.nist.gov/vuln/detail/CVE-2022-40151 -->
     <!-- Resolved  CVE-2022-40152: https://nvd.nist.gov/vuln/detail/CVE-2022-40152 -->
     <!-- Resolved  CVE-2022-40153: https://nvd.nist.gov/vuln/detail/CVE-2022-40153 -->
